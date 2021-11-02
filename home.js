@@ -146,3 +146,24 @@ for (let num=0; num<=10; num++){
 }
 
 console.log(emptyArray);
+
+// Object in JavaScript
+// Dictionaries in Python
+
+let student = {
+    first:'Saijeet', 
+    last:'Upadhyay', 
+    age:22, 
+    height:175,
+    studentInfo: function (){
+        return this.first + '\n'+ this.last + '\n' + this.age;
+    }
+};
+
+console.log(student.first);
+console.log(student.last);
+student.first = "Saikriti"; // Change value
+console.log(student.first);
+student.age++;
+console.log(student.age);
+console.log(student.studentInfo());
